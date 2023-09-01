@@ -1,0 +1,352 @@
+
+.main-h {
+    min-height: 100vh;
+}
+
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+button {
+    border-radius: 6px;
+    color: white;
+    background-color: #66321B;
+    border: 2px solid white;
+    padding: 0.2em 1em;
+    transition: background-color 3s ease;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FBA83F;
+
+}
+
+
+header {
+    height: 8vh;
+    background-color: #66321B;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0%;
+
+
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+
+}
+
+.navbar li {
+    list-style: none;
+    margin: 15px 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar li:hover {
+    transform: scale(1.6);
+}
+
+.logo {
+    font-weight: bolder;
+    margin: 15px 20px;
+}
+
+.section-1 {
+    height: 93vh;
+    overflow: hidden;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background.png);
+    background-size: cover;
+
+    background-position: center center;
+}
+
+.text {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.text h1 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.text p {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.animation {
+    animation: colorchange 3s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #FF6347;
+    }
+
+    50% {
+        color: #66321B;
+    }
+
+    100% {
+        color: rgb(226, 134, 72);
+    }
+}
+
+.section-2 {
+
+    height: 70vh;
+    display: flex;
+    overflow: hidden;
+    background-color: #FBA83F;
+}
+
+.bg2-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(design.png);
+    background-size: cover;
+    position: relative;
+
+}
+
+.section-2 img {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin: 50px;
+    left: 12%;
+
+}
+
+.section-2 .content {
+
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    max-width: 600px;
+    left: 50%;
+    transform: translate(-50);
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    color: white;
+    background-color: #FBA83F;
+
+
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #66321B;
+
+}
+
+.content p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+.section-3 {
+    height: 85vh;
+
+    overflow: hidden;
+
+}
+
+
+.t {
+    text-align: center;
+    width: 100vw;
+    height: 20%;
+}
+
+.section-3 h1 {
+    padding-top: 3%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #66321B;
+}
+.menucontainer{
+    display: flex;
+    justify-content: center;
+}
+.imgsection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  
+}
+.menu {
+
+position: relative;
+flex:1;
+margin:10px;
+    text-align: center;
+}
+.menu img{
+      width: 100%;
+      max-width:220px;
+      max-height:200px;
+      transition:transform 0.3s ease-in-out;
+}
+.menu button {
+        position: absolute;
+      
+         width: 100px;
+        bottom:2;
+        left:55%;
+transform: translateX(-50%);
+    background-color: #FBA83F;
+    transition: transform 0.3s;
+
+}
+.menu:hover img{
+    transform: scale(1.1);
+}
+
+.menu button:hover {
+    transform: scale(1.1);
+    background-color: #66321B;
+}
+
+footer {
+    height: 30vh;
+    background-color: #66321B;
+}
+
+footer p {
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.footermain {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 15vh;
+    position: relative;
+    gap: 1%;
+
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+
+}
+
+.iconboxes {
+    width: 7%;
+    height: 27%;
+    background-color: #FBA83F;
+    border: 2px solid #fcfcfc;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    transition: background-color 3s ease;
+    border-radius: 5px;
+
+}
+
+.iconboxes:hover {
+    background-color: #66321B;
+}
+
+button:hover {
+    background-color: #66321B;
+}
+
+@media (max-width:545px) {
+    button {
+        padding: 0px 0.1px;
+        font-size: 10px;
+
+    }
+
+    .logo {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    header {
+        width: 100%;
+        margin: 0%;
+
+    }
+
+    .navbar li {
+        font-size: 10px;
+        margin: 5px 10px;
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 20px;
+        margin-top: 0%;
+    }
+
+    .content p {
+        font-size: 10px;
+        margin-top: 0%;
+    }
+
+    .section-2 img {
+        margin: 5%;
+        width: 18%;
+    }
+
+    .section-3 h1 {
+        font-size: 20px;
+
+    }
+ .menu button{
+
+  width:60px;
+ }
+}
+
+@media (min-width:546px)and (max-width:770px) {
+    .content p {
+        font-size: 15px;
+        margin-top: 0%;
+    }
+
+    .buttonsection {
+        left: 10%;
+    }
+}
